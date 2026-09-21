@@ -1,16 +1,18 @@
+
 <script setup>
-import {useI18n} from "vue-i18n";
-import {ref} from "vue";
-import {ConfirmDialog as PvConfirmDialog, Toast as PvToast, Toolbar as PvToolbar} from "primevue";
+  import {useI18n} from "vue-i18n";
+  import {ref} from "vue";
+  import {ConfirmDialog as PvConfirmDialog, Toast as PvToast, Toolbar as PvToolbar} from "primevue";
+  import FooterContent from "./footer-content.vue";
 
-const { t } = useI18n();
-const drawer = ref(false);
-const toggleDrawer = () => drawer.value = !drawer.value;
+  const { t } = useI18n();
+  const drawer = ref(false);
+  const toggleDrawer = () => drawer.value = !drawer.value;
 
-const items = [
+  const items = [
   { label: 'option.home', to: '/home' },
   { label: 'option.about', to: '/about' }
-];
+  ];
 </script>
 
 <template>

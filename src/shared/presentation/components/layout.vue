@@ -3,6 +3,7 @@
   import {useI18n} from "vue-i18n";
   import {ref} from "vue";
   import {ConfirmDialog as PvConfirmDialog, Toast as PvToast, Toolbar as PvToolbar} from "primevue";
+  import FooterContent from "./footer-content.vue";
 
   const { t } = useI18n();
   const drawer = ref(false);
